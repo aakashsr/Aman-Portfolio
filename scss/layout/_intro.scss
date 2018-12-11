@@ -1,0 +1,117 @@
+.intro {
+    background-color: #f7f7f7;
+    height: 100vh;
+    padding: 2rem 0;
+
+    @include screen('landscape') {
+        height: unset;
+    }
+
+    @include respond(medium) {
+        height: auto;
+        padding: 3rem 0;
+    }
+
+    &__container {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+
+        @include respond(medium) {
+            max-width: 860px;
+            display: table;
+            content: "";
+            clear: both;
+            position: relative;
+        }
+    }
+
+    &__image {
+        text-align: center;
+
+        @include respond(medium) {
+            padding: 1rem;
+            margin-left: 10%;
+            width: 52%;
+        }
+    }
+
+    &__content-box {
+        width: 100%;
+        margin-top: 2rem;
+        padding: 0 1rem;
+
+        @include respond(medium) {
+            display: inline-block;
+            background-color: rgba($color-white, .9);
+            padding: 1.5rem;
+            position: absolute;
+            top: 40%;
+            left: 75%;
+            transform: translate(-50%, -50%);
+            width: 43%;
+            max-width: 350px;
+            max-height: 370px;
+            border: 1px solid $color-primary-light;
+            border-radius: 4px;
+            outline: .5rem solid $color-primary;
+            outline-offset: .75rem;
+        }
+
+        @include respond(x-large) {
+            width: 50%;
+            max-width: 370px;
+        }
+    }
+
+    &__photo {
+        width: 95%;
+        max-width: 475px;
+        box-shadow: 0 .5rem 3rem rgba(0, 0, 0, .1);
+
+        @include respond(small) {
+            border-radius: 4px;
+        }
+
+        @include respond(medium) {
+            max-width: 375px; // Converting to portrait
+        }
+
+        @include respond(x-large) {
+            max-width: 450px;
+        }
+    }
+
+    &__name {
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    &__content {
+        font-family: 'Ubuntu', sans-serif;
+        padding: 1rem;
+        font-size: 1.5rem;
+
+        @include respond(small) {
+            padding: 1rem 0;
+            font-weight: 500;
+        }
+
+        @include respond(medium) {
+            font-family: 'Spectral', serif;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+    }
+
+    &__greeting {
+        font-family: 'raleway', sans-serif;
+        text-align: center;
+        display: block;
+        text-transform: uppercase;
+        color: $color-grey-dark-3;
+        font-size: 2.5rem;
+        letter-spacing: 7px;
+        font-weight: 600;
+    }
+}

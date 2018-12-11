@@ -1,0 +1,56 @@
+.navigation {
+    height: 26%;
+
+    @include respond(medium) {
+        height: 12%;
+    }
+
+    @include respond(large) {
+        float: right;
+        width: 65%;
+        height: 20%;
+        padding: 1.5rem;
+    }
+
+    &__list {
+        display: none;
+        width: 60%;
+        padding-right: 10rem;
+
+        @include respond(small) {
+            padding-right: 14rem;
+        }
+
+        @include respond(medium) {
+            @include flex-container;
+            padding-right: 0;
+            margin-right: 0;
+            visibility: visible;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        &-link {
+            color: $color-white;
+            display: block;
+            padding-bottom: .5rem;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom .3s;
+
+            &:hover {
+                border-bottom: 1px solid #ebecec;
+                border-bottom-color: #52bab3;
+            }
+        }
+    }
+
+    &__item {
+        margin-bottom: .5rem;
+        font-size: 16px;
+        transition: all 0.3s;
+
+        @include respond(medium) {
+            width: 75px;
+        }
+    }
+}

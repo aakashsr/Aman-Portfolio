@@ -1,0 +1,20 @@
+@keyframes move-in-left {
+    0% {
+      opcity: 0;
+      transform: translate(-2rem);
+    }
+    100% {
+      opacity: 100;
+      transform: translate(0);
+    }
+  }
+  @keyframes move-in-right {
+    0% {
+      opcity: 0;
+      transform: translate(2rem);
+    }
+    100% {
+      opacity: 100;
+      transform: translate(0);
+    }
+  }

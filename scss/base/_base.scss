@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    /*The browsers by default display some margin around the body*/
+    padding: 0;
+    box-sizing: inherit;
+
+}
+
+html {
+    font-size: 62.5%;       // 1 rem = 10px => 10px/16px = 62.5%
+    font-size: 10px;
+
+    @include respond(small){
+        font-size: 68.75%;
+    }
+
+    @include respond(medium){
+        font-size: 75%;
+    }
+
+    @include respond(large){
+        font-size: 87.5%;
+    }
+
+    @include respond(x-large){
+        font-size: 100%;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}

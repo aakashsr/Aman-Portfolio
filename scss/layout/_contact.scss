@@ -1,0 +1,189 @@
+.contact{
+    position: relative;
+    // background-image: url('../../img/c1700.jpg');
+    background-size: cover;
+    background-position: center;
+
+    &__container{
+        @include respond(large){
+            display: flex;
+            background-image:  url('../img/c1700.jpg');
+            background-size: cover;
+            // height: 100vh;
+            justify-content: space-around;
+        }
+    }
+
+    &-details__container,
+    &-form__container{
+        width: 100%;
+        position: relative;
+        background-image:url('../img/c1700.jpg');
+        background-size: cover;
+        height: 100vh;
+
+        @include screen('landscape'){
+            height: 170vh !important;
+        }
+
+        @include respond(medium){
+            // height: 80vh;
+            height: 65vh;
+        }
+
+        @include respond(large){
+            background-image: none;
+            background-size: inherit;
+            height: 70vh;
+            width: 40%;
+        }
+
+        @include respond(x-large){
+            height: 100vh;
+        }
+
+
+    }
+
+    &__details{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 85%;
+        max-width: 30rem;
+        // margin: 0 auto;
+        font-size: 1.4rem;
+        color: $color-white;
+        background-color: rgba($color-grey-dark-3,.8);
+        padding:3rem 2rem;
+        border-radius: 4px;
+
+        @include respond(small){
+            width: 80%;
+        }
+
+        @include respond(large){
+            font-size: 1rem;
+            padding: .75rem 1.25rem;
+        }
+
+        @include respond(x-large){
+            top: 45%;
+            width: 65%;
+        }
+    }
+
+    &__form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 85%;
+        max-width: 30rem;
+        margin:2rem auto;
+        background-color: rgba($color-grey-dark-3,.8);
+        padding: 2rem 1rem;
+        border-radius: 4px;
+        color: $color-white;
+
+        @include respond(small){
+            padding: 1rem;
+            width: 80%;
+        }
+
+        @include respond(medium){
+            top: 47%;
+        }
+
+        @include respond(x-large){
+            top: 45%;
+            width: 70%;
+        }
+
+
+    }
+    //$color-grey-dark-3
+
+    &__feature{
+
+        vertical-align: middle;
+        &--mail,
+        &--number,
+        &--location{
+            font-size: 3rem;
+            vertical-align: middle;
+            padding-right: .5rem;
+            color: $color-primary-light;
+        }
+    }
+}
+
+.form{
+    &__group:last-child{
+        text-align:center;
+    }
+
+    &__submit{
+        text-align: center;
+        margin-bottom: 4rem !important;
+        @include respond(large){
+            margin-bottom: 3rem !important;
+        }
+    }
+
+    &__input {
+        font-size: 1.3rem;
+        font-family: 'Lato',sans-serif;
+        color: $color-black;
+        padding: .75rem 1rem;
+        margin: 1.25rem auto;
+        border-radius: 500px;
+        // background-color: rgba($color-white, .5);
+        background-color:$color-white;
+        border: none;
+        border-bottom: 3px solid transparent;
+        display: block;
+        width: 70%;
+
+        @include respond(small){
+            width: 75%;
+        }
+
+        @include respond(large){
+            font-size: 1rem;
+            margin-top: 1rem;
+            padding: .35rem .75rem;
+        }
+
+        &:focus {
+            outline: none;
+            background-origin: 0 1rem 2rem rgba($color-black, .1);
+            border-bottom: 3px solid $color-primary;
+        }
+
+        &:focus:invalid{
+            border-bottom: 3px solid $color-secondary-dark;
+        }
+
+        &::-webkit-input-placeholder {
+            color: $color-grey-dark-2;
+        }
+    }
+
+    
+    &__label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+    }
+
+    &__textarea{
+        margin-top: 3.5rem;
+    }
+
+
+}

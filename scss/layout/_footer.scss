@@ -1,0 +1,59 @@
+.footer {
+    background-color: $color-grey-light-2;
+    padding: 3rem 0;
+    font-size: 1.4rem;
+
+    &__social-media {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    &__icon {
+        // color: #333;
+        font-size: 18px;
+        padding-top: 5px;
+
+        @include respond(medium) {
+            font-size: 22px;
+            padding-top: 6px;
+        }
+    }
+
+    &__copyright {
+        margin: .5rem 0;
+        font-size: 1rem;
+        color: #000;
+        opacity: .7;
+        text-align: center;
+    }
+
+    &__heart {
+        font-size: 1.65rem;
+        padding: 0 .25rem;
+        color: red;
+        vertical-align: middle;
+    }
+
+    &__link {
+        color: #333;
+        display: inline-block;
+        width: 33px;
+        height: 33px;
+        border: 1.5px solid #333;
+        border-radius: 100%;
+        text-decoration: none;
+        outline: none;
+        margin: .5rem;
+        transition: all .3s;
+
+        @include respond(medium) {
+            width: 38px;
+            height: 38px;
+        }
+
+        &:hover{
+            background-color: #333;
+            color: #fff;
+        }
+    }
+}

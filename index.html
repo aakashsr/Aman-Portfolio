@@ -9,32 +9,33 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Six+Caps" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
 
 <body>
     <header class='header'>
         <!-- <div class="header__main-nav"> -->
-            <div class='header__logo-box'>
-                <a href='/'>
-                    <img src='img/logo-(white)6.png' class='header__logo' alt='Logo'>
-                </a>
-            </div>
-            <nav class='navigation'>
-                <ul class='navigation__list'>
-                    <li class='navigation__item'><a class='navigation__list-link' href='home.html'>Home</a></li>
-                    <li class='navigation__item'><a class='navigation__list-link' href=' #'>Film</a></li>
-                    <li class='navigation__item'><a class='navigation__list-link' href=' #'>Gallery</a></li>
-                    <li class='navigation__item'><a class='navigation__list-link' href=' #'>Hire Me</a></li>
-                </ul>
-                <a class='navigation__menu-link'>
-                    <i class="navigation__menu-icon icon ion-md-menu"></i>
-                </a>
-            </nav>
+        <div class='header__logo-box logo-box'>
+            <a href='index.html'>
+                <img src='img/1logo.png' class='header__logo' alt='Logo'>
+            </a>
+        </div>
+        <nav class='header__navigation navigation'>
+            <ul class=' mob-nav-list navigation__list'>
+                <li class='navigation__item'><a class='navigation__list-link' href='home.html'>Home</a></li>
+                <li class='navigation__item'><a class='navigation__list-link' href='home.html#portfolio'>Film</a></li>
+                <li class='navigation__item'><a class='navigation__list-link' href=' #'>Gallery</a></li>
+                <li class='navigation__item'><a class='navigation__list-link' href=' #'>Hire Me</a></li>
+            </ul>
+            <a class='navigation__menu-link ham-icon'>
+                <!-- <i class="navigation__menu-icon icon ion-md-menu"></i> -->
+                <span class="navigation__icon"></span>
+            </a>
+        </nav>
         <!-- </div> -->
 
         <div class='header__hero-text-box'>
-            <div class='rec-top'>
+            <div class='rec rec-top'>
                 <!-- Upper Rectangular Box design component-->
                 <div class='rec-top__square  rec-top__square--left'>
                 </div>
@@ -63,17 +64,18 @@
                 </div>
             </div>
             <!-- Lower Rectangular Box design component-->
-            <div class='rec-bottom'>
+            <div class='rec rec-bottom'>
                 <div class='rec-bottom__square  rec-bottom__square--left'>
                 </div>
                 <div class='rec-bottom__square  rec-bottom__square--right'>
                 </div>
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
-        <script src='main.js'></script>
+    </header>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script> -->
+    <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
+    <script src='js/main.js'></script>
 </body>
 
 </html>

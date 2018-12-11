@@ -1,0 +1,122 @@
+.home-social-media {
+    display: none;
+
+    @include respond(medium) {
+        display: inline-block;
+    }
+}
+
+.home {
+
+    &-header {
+        height: 26%;
+    }
+
+    &-logo__box {
+        @include respond(medium) {
+            width: 25%;
+        }
+    }
+
+    &-navigation {
+        text-align: center;
+
+        @include respond(medium) {
+            width: 50%;
+            display: inline-block;
+        }
+
+        &__list {
+            display: none;
+            width: 60%;
+            padding-right: 10rem;
+
+        @include respond(small) {
+            padding-right: 14rem;
+        }
+
+
+            @include respond(medium) {
+                display: flex !important;
+                justify-content: space-around;
+                width: 100%;
+                padding-right: 0;
+            }
+
+            @include respond(x-large) {
+                padding-top: 1.5rem;
+            }
+        }
+
+        &__list-link {
+
+            color: $color-white;
+            display: block;
+            padding-bottom: .5rem;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom .3s;
+
+            &:hover {
+                border-bottom: 1px solid #ebecec;
+                border-bottom-color: #52bab3;
+            }
+            
+
+
+            @include respond(medium) {
+                width: 75px;
+            }
+        }
+    }
+
+    &-navigation__item {
+        margin-bottom: .5rem;
+        font-size: 16px;
+        transition: all 0.3s;
+
+        @include respond(medium) {
+            width: 75px !important;
+        }
+    }
+
+    &__content {
+        color: $color-white;
+        padding-top: 5rem;
+        text-align: center;
+    }
+
+    &-social-media {
+        @include respond(medium) {
+            width: 25%;
+            float: right;
+        }
+
+        @include respond(x-large) {
+            padding-top: .35rem;
+        }
+
+        &__icon {
+            @include respond(medium) {
+                float: right;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.social-media__icon {
+    // @include respond(medium) {
+    //     font-size: 20px;
+    // }
+
+    @include respond(x-large) {
+        font-size: 30px;
+    }
+}
+
+// TEST
+
+// .header__content{
+//     color: $color-white;
+//     padding-top:  5rem;
+// }

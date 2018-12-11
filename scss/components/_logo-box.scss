@@ -1,0 +1,8 @@
+.logo-box{
+    padding: 0.5rem 1rem 1rem 0;
+    float: left;
+    color: $color-white;
+    @include respond(x-large){
+        padding-top: 0;
+    }
+}

@@ -1,0 +1,86 @@
+.rec {
+    height: 14%;
+
+    &-top{
+        @include respond(medium){
+            padding: 0 2rem;
+        }
+    }
+
+    &-bottom{
+        @include respond(medium){
+            padding: 0 2rem;
+        }
+    }
+
+
+
+    &-top__square {
+        width: 6rem;
+        height: 100%;
+
+        // margin: 1rem ;
+        &--left {
+            float: left;
+            border-top: $thin-border;
+            border-left: $thin-border;
+            animation-name: move-in-left;
+            animation-duration: 0.75s;
+            margin: 1rem;
+
+            @include respond(medium) {
+                border-top: $thick-border;
+                border-left: $thick-border;
+            }
+
+        }
+
+        &--right {
+            float: right;
+            border-top: $thin-border;
+            border-right: $thin-border;
+            animation-name: move-in-right;
+            animation-duration: 0.75s;
+            margin: 1rem;
+
+            @include respond(medium) {
+                border-top: $thick-border;
+                border-right: $thick-border;
+            }
+        }
+    }
+
+
+    &-bottom__square {
+        width: 6rem;
+        height: 100%;
+
+        &--left {
+            float: left;
+            border-bottom: $thin-border;
+            border-left: $thin-border;
+            animation-name: move-in-left;
+            animation-duration: 0.75s;
+            margin: 1rem;
+
+            @include respond(medium) {
+                border-bottom: $thick-border;
+                border-left: $thick-border;
+            }
+        }
+
+        &--right {
+            float: right;
+            border-bottom: $thin-border;
+            border-right: $thin-border;
+            animation-name: move-in-right;
+            animation-duration: 0.75s;
+            margin: 1rem;
+
+            @include respond(medium) {
+                border-bottom: $thick-border;
+                border-right: $thick-border;
+            }
+        }
+    }
+}

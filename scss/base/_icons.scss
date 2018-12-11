@@ -1,0 +1,21 @@
+.social-media {
+    &__icon {
+        color: $color-white;
+        font-size: 30px;
+        padding: 1rem;
+        transition: all .3s;
+    }
+
+    &--ig:hover {
+        color: #e95950;
+    }
+
+    &--yt:hover {
+        color: #ff0000;
+    }
+
+    &--fb:hover {
+        color: #3b5998;
+    }
+
+}

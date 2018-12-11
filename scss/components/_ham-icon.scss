@@ -1,0 +1,61 @@
+.ham-icon {
+    padding: 1rem;
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    width: 40px;
+    height: 35px;
+
+    @include respond(medium) {
+        display: none;
+    }
+
+    & .navigation__icon,
+    & .navigation__icon:before,
+    & .navigation__icon:after {
+        cursor: pointer;
+        border-radius: 1px;
+        height: 2px;
+        width: 25px;
+        background: white;
+        position: absolute;
+        display: block;
+        content: '';
+    }
+
+    & .navigation__icon:before {
+        top: -8px;
+    }
+
+    & .navigation__icon:after {
+        bottom: -8px;
+    }
+
+    // Animation
+
+    & .navigation__icon,
+    & .navigation__icon:before,
+    & .navigation__icon:after {
+        transition: all 200ms ease-in-out;
+    }
+}
+
+.active {
+
+    & .navigation__icon {
+        background-color: transparent;
+    }
+
+    & .navigation__icon:before,
+    & .navigation__icon:after {
+        top: 0;
+    }
+
+    & .navigation__icon:before {
+        transform: rotate(135deg);
+    }
+
+    & .navigation__icon:after {
+        transform: rotate(-135deg);
+    }
+}
